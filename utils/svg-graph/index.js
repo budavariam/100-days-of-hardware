@@ -8,7 +8,7 @@ function generate(data = []) {
   const document = new DOMImplementation().createDocument('http://www.w3.org/1999/xhtml', 'html', null);
 
   const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-  const startDate = new Date('2022-06-15')
+  const startDate = new Date('2023-04-15')
   const endDate = oneYearPlus(startDate)
   const graph = Graph(document, svg, {
     data,
