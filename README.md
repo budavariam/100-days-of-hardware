@@ -1,8 +1,12 @@
-# I've joined the #100DaysOfCode Challenge
+# I've joined the #100DaysOfHardware Challenge
 
-See my progress [here](https://budavariam.github.io/100-days-of-code/log.html)!
+See my progress [here](https://budavariam.github.io/100-days-of-hardware/log.html)!
 
-See [Halfway Point Statistics](https://budavariam.github.io/100-days-of-code/log.html#halfway-point)!
+I came up with this idea after completing a round of #100DaysOfCode.
+
+I saw that others have already used this hashag so why not join.
+
+I advise to start with #100DaysOfCode since it has a better community. I kept the base repo from that challenge.
 
 ## Contents
 
