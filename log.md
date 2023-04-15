@@ -25,6 +25,6 @@ I've set up a `@docusaurus`  site to gather my knowledge over there.
 - Project instructables on how to recreate them
 - My tutorials on the hardware I already own
 
-**Thoughts**:
+**Thoughts**: It's nice to get started with a clear state of mind, with some goals in mind of what I want to achieve. I have the base building blocks, I'm looking forward to see what I can make out of them.
 
 ![Docusaurus site](assets/day-1.jpg)
