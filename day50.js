@@ -2,22 +2,22 @@ const LIMIT = 10
 const BATCH_SIZE = 5
 
 const STATS = [
-    { tag: "Language Crossword", days: [34, 35, 36, 39, 41, 42, 43, 44, 47, 48] },
-    { tag: "Event Scheduler", days: [12, 26, 27, 28, 29, 30, 31, 32] },
-    { tag: "CSS Battle", days: [3, 4, 7, 21, 33, 40, 45] },
-    { tag: "100DaysOfCode meta-development", days: [1, 9, 16, 19, 22, 50] },
-    { tag: "VSCode Extension", days: [23, 24, 25] },
-    { tag: "Learning-Spanish 11ty Site", days: [10, 11, 15] },
-    { tag: "Absence Calendar", days: [5, 8] },
-    { tag: "FlipperZero", days: [13, 14] },
-    { tag: "Kubernetes", days: [17, 18] },
-    { tag: "Learning", days: [46] },
-    { tag: "TimesheetHelper", days: [37] },
-    { tag: "CalendarExport", days: [38] },
-    { tag: "P5JS", days: [2] },
-    { tag: "Plotly", days: [6] },
-    { tag: "Vim", days: [20] },
-    { tag: "Hacktoberfest", days: [49] },
+    // { tag: "Language Crossword", days: [34, 35, 36, 39, 41, 42, 43, 44, 47, 48] },
+    // { tag: "Event Scheduler", days: [12, 26, 27, 28, 29, 30, 31, 32] },
+    // { tag: "CSS Battle", days: [3, 4, 7, 21, 33, 40, 45] },
+    // { tag: "100DaysOfCode meta-development", days: [1, 9, 16, 19, 22, 50] },
+    // { tag: "VSCode Extension", days: [23, 24, 25] },
+    // { tag: "Learning-Spanish 11ty Site", days: [10, 11, 15] },
+    // { tag: "Absence Calendar", days: [5, 8] },
+    // { tag: "FlipperZero", days: [13, 14] },
+    // { tag: "Kubernetes", days: [17, 18] },
+    // { tag: "Learning", days: [46] },
+    // { tag: "TimesheetHelper", days: [37] },
+    // { tag: "CalendarExport", days: [38] },
+    // { tag: "P5JS", days: [2] },
+    // { tag: "Plotly", days: [6] },
+    // { tag: "Vim", days: [20] },
+    // { tag: "Hacktoberfest", days: [49] },
 ]
 
 function createStrike(num) {

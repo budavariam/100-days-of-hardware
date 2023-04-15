@@ -9,11 +9,11 @@ On those days I might not have anything to share over here.
 
 #### Start Date
 
-July 2nd, 2022.
+April 15nd, 2023.
 
 ## Additional Rules
 
-1. I will tweet about my progress every day -> using the hashtag #100DaysOfCode
+1. I will tweet about my progress every day -> using the hashtag #100DaysOfHardware
 2. If I code at work, that time won't count towards the challenge.
 3. I will push code to GitHub every day so that anyone can see my progress.
 4. I will update the [Log](log.md) with the day's progress and provide a link so that others can see my progress.
