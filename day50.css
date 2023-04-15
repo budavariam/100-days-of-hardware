@@ -1,0 +1,20 @@
+.strike-group {
+    margin-right: 5px;
+}
+.day:nth-child(5) {
+    display: inline-block;
+    transform: translateX(-0.7em) scale(1.9) rotate(90deg);
+    font-weight: lighter;
+}
+
+.day {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    font-size: medium;
+}
+
+.day:hover {
+    text-decoration: none;
+    color: #00000033;
+}
