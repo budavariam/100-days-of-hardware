@@ -28,3 +28,19 @@ I've set up a `@docusaurus`  site to gather my knowledge over there.
 **Thoughts**: It's nice to get started with a clear state of mind, with some goals in mind of what I want to achieve. I have the base building blocks, I'm looking forward to see what I can make out of them.
 
 ![Docusaurus site](assets/day-1.jpg)
+
+## Day 2: 2023-04-16
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1647537684133412865)
+
+**Today's Progress**: `#100DaysOfHardware` Day 2
+
+📚 I spent time revisiting the basics from what I've learned in Electronics class in high school
+
+🧠 I added a Theory tutorial section
+
+🩹 I embedded a plain simple Resistor Band Color calculator into the site
+
+🛠️ I revisited how to use the multimeter
+
+**Thoughts**: I spent way too much time implementing that calculator, but now I have better sections, and I can add any react code from now on.
