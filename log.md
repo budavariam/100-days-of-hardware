@@ -44,3 +44,17 @@ I've set up a `@docusaurus`  site to gather my knowledge over there.
 🛠️ I revisited how to use the multimeter
 
 **Thoughts**: I spent way too much time implementing that calculator, but now I have better sections, and I can add any react code from now on.
+
+## Day 3: 2023-04-17
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1648073274457309187)
+
+**Today's Progress**: `#100DaysOfHardware` Day 3
+
+📚 I finished going through my inventory and added a page for all items
+
+🖋️ I started to look into how to connect the eink display to raspberry pi
+
+💾 I collected and reviewed some demo source code for testing it out later
+
+**Thoughts**: It was a loooong day
