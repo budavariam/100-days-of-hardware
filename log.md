@@ -58,3 +58,17 @@ I've set up a `@docusaurus`  site to gather my knowledge over there.
 💾 I collected and reviewed some demo source code for testing it out later
 
 **Thoughts**: It was a loooong day
+
+## Day 4: 2023-04-18
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1648403408741707777)
+
+**Today's Progress**: `#100DaysOfHardware` Day 4
+
+🗺️ I've started to put together a simpler project to practice how I'll work through my ideas
+
+🚦 This project is just going to check status info from the network and light up LEDs accordingly
+
+🛹 I've sketched the code and planned the circuit diagram
+
+**Thoughts**:
