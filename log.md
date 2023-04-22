@@ -72,3 +72,19 @@ I've set up a `@docusaurus`  site to gather my knowledge over there.
 🛹 I've sketched the code and planned the circuit diagram
 
 **Thoughts**:
+
+## Day 5: 2023-04-22
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1649884631582253059)
+
+**Today's Progress**: `#100DaysOfHardware` Day 5
+
+🚨  As a practice I've blinked a LED again to get astarted
+
+👋 I connected the PIR for movement detection, blinked the lights on that
+
+🙄 I connected the eInk display to refresh data based on movement, but sadly I see many people were struggling as well
+
+**Thoughts**:
+
+![None](assets/day-5.jpg)
