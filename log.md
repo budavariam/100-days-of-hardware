@@ -88,3 +88,19 @@ I've set up a `@docusaurus`  site to gather my knowledge over there.
 **Thoughts**:
 
 ![None](assets/day-5.jpg)
+
+## Day 6: 2023-05-01
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1653026148110958594)
+
+**Today's Progress**: `#100DaysOfHardware` Day 6
+
+🔧 At last I figured out the problem with the e-ink Display. The wiring was too loose
+
+🍞 I added an extra layer on the breadboard between the 2 sets of wires to fix them together
+
+🖼️ I played around with the PIL library to display text and images
+
+**Thoughts**: I had an idea that it could be a problem, and so it was. It works flawlessly. 2 of my wires broke in the process, and I set up remote development with raspberry VSCode remote SSH.
+
+![waveshare eink display showing the logo of my website](assets/day-6.jpg)
