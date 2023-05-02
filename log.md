@@ -104,3 +104,17 @@ I've set up a `@docusaurus`  site to gather my knowledge over there.
 **Thoughts**: I had an idea that it could be a problem, and so it was. It works flawlessly. 2 of my wires broke in the process, and I set up remote development with raspberry VSCode remote SSH.
 
 ![waveshare eink display showing the logo of my website](assets/day-6.jpg)
+
+## Day 7: 2023-05-02
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1653282990426927105)
+
+**Today's Progress**: `#100DaysOfHardware` Day 7
+
+📏 My app'll have a display, and I'll debug image positions a lot. I don't want to develop on hardware
+
+🤓 I've set up a dev env. I've configured ssh with X11 forwarding, rsync for code sharing
+
+🎁 VScode remote plugin doesn't give enough benefits yet
+
+**Thoughts**: I thought VSCode remote will be the way, but I like X11 way more. I collect my knowledge and might even post a blog about my setup
