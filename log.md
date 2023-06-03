@@ -118,3 +118,35 @@ I've set up a `@docusaurus`  site to gather my knowledge over there.
 🎁 VScode remote plugin doesn't give enough benefits yet
 
 **Thoughts**: I thought VSCode remote will be the way, but I like X11 way more. I collect my knowledge and might even post a blog about my setup
+
+## Day 8: 2023-05-23
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1661067193872793621)
+
+**Today's Progress**: `#100DaysOfHardware` Day 8
+
+⏭️ Today I wanted to learn more about what could be the next steps of a prototype
+
+👨‍🎓 I refreshed my high school knowledge on how to draw the circuit, what is a PCB protoboard, what is a PCB
+
+👨‍🔧 Looked into how to solder, what equipment do I need for it
+
+**Thoughts**: bunh of reading, some knowledge management
+
+## Day 9: 2023-06-03
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1665079614996205568)
+
+**Today's Progress**: `#100DaysOfHardware` Day 9 
+
+🍓 Today I've tried out my Raspberry PI Pico W  
+
+🐍 I set up micropython on it via CLI from my rpi4. Later I used Thonny via X Window for development
+
+🔋 I loaded the code into the device and ran it from a battery pack
+
+🤓 I'm sooo excited!🤩
+
+**Thoughts**: WOOOOW
+
+![Raspberry pi pico is held via its USB cable with its embedded led turned on. On the background Thonny IDE is visible with the python code that runs to achieve the blinking effect](assets/day-9.jpg)
