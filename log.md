@@ -150,3 +150,19 @@ I've set up a `@docusaurus`  site to gather my knowledge over there.
 **Thoughts**: WOOOOW
 
 ![Raspberry pi pico is held via its USB cable with its embedded led turned on. On the background Thonny IDE is visible with the python code that runs to achieve the blinking effect](assets/day-9.jpg)
+
+## Day 10: 2023-06-04
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1665431026263379970)
+
+**Today's Progress**: `#100DaysOfHardware` Day 10
+
+☀️ Summer is here, and I have to prepare for the heat
+
+🌪️ I've dusted off my micro:bit and put together a circuit to have a button-controlled fan
+
+🌊 Finally (after ~3 years) I tested my submersible water pumps, to see if all of them work fine with 5V
+
+**Thoughts**: I was happy to see that the pumps work. 3V is not enough for them/
+
+![Microbit circuit that has a button and controls a fan. A spinning fan is shown on the foreground](assets/day-10.jpg)
