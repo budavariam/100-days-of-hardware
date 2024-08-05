@@ -28,7 +28,11 @@ const dates = [
 for (const s of dates) {
   const startDate = new Date(s)
   const endDate = oneYearPlus(new Date(s))
-  const data = stats(startDate, endDate, (line) => ({ date: line.date, count: line.weight }))
+  const data = stats(startDate, endDate, (line) => ({ 
+    date: line.date, 
+    count: line.weight,
+    dayNum: line.daynum,
+  }))
   // show the stats on hover
   const svg = generate(s, data)
   // console.log(svg)

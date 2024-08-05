@@ -22,9 +22,10 @@ export default function Graph(document, root, {
     const values = [];
     const days = diffDays(startDate, endDate);
     const dataTmp = data.reduce((memo, v, i) => {
+        console.log(v);
         memo[v.date] = {
             cnt: v.count,
-            dID: i + 1 // reduxe index start from 0, dayindex start from 1
+            dID: v.dayNum // reduxe index start from 0, dayindex start from 1
         }
         return memo;
     }, {});
