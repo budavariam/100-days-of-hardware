@@ -13,7 +13,8 @@ function calcWeight(parsedLine) {
     }
 }
 
-export function stats(formatFn = (e) => e, weightFn = calcWeight) {
+
+export function stats(startDate, endDate, formatFn = (e) => e, weightFn = calcWeight) {
     let result = []
     try {
         const statsPath = path.join(process.cwd(), '..', 'twitter', 'STATS')
@@ -36,8 +37,14 @@ export function stats(formatFn = (e) => e, weightFn = calcWeight) {
                     quote_count: parseInt(lineData[i++]),
                 }
             })
+            .filter((line) => {
+                return (new Date(line.date) < endDate) &&
+                    (new Date(line.date) >= startDate)
+            }
+            )
             .map(weightFn)
             .map(formatFn)
+        console.log(`${result.length} lines of stats generated`);
     } catch (err) {
         console.error(err);
     }

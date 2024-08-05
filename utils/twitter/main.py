@@ -8,104 +8,53 @@ import progress
 import pytz
 import dateutil.parser
 
-CET=pytz.timezone('Europe/Budapest')
-BST=pytz.timezone('Europe/London')
-load_dotenv() # take environment variables from .env.
-BEARER_TOKEN = os.getenv("BEARER_TOKEN")
+if True:
+    from data_history import (
+        get_created_date,
+        get_public_metrics,
+        get_text,
+        get_tweet,
+        get_web_attachment_url,
+        download_image_attachment,
+    )
+else:
+    from data_api import (
+        get_created_date,
+        get_public_metrics,
+        get_text,
+        get_tweet,
+        get_web_attachment_url,
+        download_image_attachment,
+    )
+
+load_dotenv()  # take environment variables from .env.
 ADD_THOUGHTS = True
 
-logging.basicConfig(level = logging.INFO)
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger()
 
 IDS = progress.IDS
 
-def get_tweet(id):
-    url=f"https://api.twitter.com/2/tweets/{id}?tweet.fields=attachments,created_at,entities,source,text,public_metrics&expansions=attachments.media_keys&media.fields=alt_text,media_key,type,url,variants&user.fields=created_at,id,name,url,username"
-    headers = {"Authorization": f"Bearer {BEARER_TOKEN}"}
-    tweet = requests.get(url, headers=headers).json()
-    logger.info("Got data for id:%s data:%s", id, tweet)
-    return tweet
-
-def get_text(tweet):
-    return tweet.get('data').get('text')
-
-def get_created_date(tweet):
-    """ Use BST so 1 AM marks a new day """
-    # '%Y-%m-%dT%H:%M:%S.%fZ'
-    date_str=tweet.get('data').get('created_at')
-    date_datetime=dateutil.parser.isoparse(date_str)
-    result = date_datetime.astimezone(tz=BST).isoformat()
-    return result
-
-def download_image_attachment(daynum, tweet):
-    includes = tweet.get('includes')
-    if includes is None:
-        return None
-    media = includes.get('media')
-    if ((media is None) or len(media) == 0):
-        return None
-    result = None
-    for item in media:
-        if item.get('type') == "photo":
-            url = item.get('url')
-            alt_text = item.get('alt_text')
-            filepath = f"assets/day-{daynum}.jpg"
-            result = {
-                'url': url,
-                'alt_text': alt_text,
-                'filepath': filepath,
-            }
-            logger.info("Image Attachment found", result)
-            response = requests.get(url)
-            with open(f"../../{filepath}", "wb") as attachment:
-                attachment.write(response.content)
-            logger.info("Attachment saved to %s", filepath)
-            break # stop at first attachment
-    return result
-
-def get_public_metrics(tweet):
-    # {'retweet_count': 0, 'reply_count': 0, 'like_count': 0, 'quote_count': 0}
-    result=tweet.get('data').get('public_metrics')
-    return result
-
-def get_web_attachment_url(tweet):
-    data=tweet.get('data')
-    entities = data.get('entities')
-    if entities is None:
-        return None
-    urls = entities.get('urls')
-    if (urls is None) or (len(urls) == 0):
-        return None
-    result = None
-    for item in urls:
-        if item.get('media_key'):
-            # ignore image attachment
-            continue
-        result = {
-            'title': item.get('title'),
-            'url': item.get('expanded_url'),
-        }
-        logger.info("Web Attachment found %s", result)
-        break # stop at first
-    return result
 
 def get_last_visited_day():
-    with open("./LAST_DAY", 'r') as lastday:
+    with open("./LAST_DAY", "r") as lastday:
         data = lastday.readline()
         return int(data)
     return None
 
+
 def update_last_line(num):
-    with open("./LAST_DAY", 'w') as lastday:
+    with open("./LAST_DAY", "w") as lastday:
         lastday.write(str(num))
+
 
 def update_stats(stat_lines):
     header = "daynum,id,date,retweet_count,reply_count,like_count,quote_count" + "\n"
     # todo make it update the last N lines as well, not in a greedy way maybe be smart and handle it as csv, ffirst collect then update the data
     final = [header]
-    with open("./STATS", 'w') as stats:
+    with open("./STATS", "w") as stats:
         for data in stat_lines:
-            [tweet_id,daynum,created_date,public_metrics] = data
+            [tweet_id, daynum, created_date, public_metrics] = data
             # public_metrics: {'retweet_count': 1, 'reply_count': 1, 'like_count': 1, 'quote_count': 0}
             stat_data = [
                 str(daynum),
@@ -121,11 +70,16 @@ def update_stats(stat_lines):
         stats.writelines(final)
     logger.info("Stats written")
 
-def update_log(tweet_id, daynum, created_date,txt,web_attachment,image_attachment):
+
+def update_log(tweet_id, daynum, created_date, txt, web_attachment, image_attachment):
     formatted_date = created_date.split("T")[0]
     formatted_text = txt
-    formatted_text = re.sub('https://t.co/\w+\s*', '', formatted_text) # remove twitter attachment links
-    formatted_text = re.sub(r'([#@]\w+)', r'`\1`', formatted_text) # wrap hashtags and mentions in blocks
+    formatted_text = re.sub(
+        "https://t.co/\w+\s*", "", formatted_text
+    )  # remove twitter attachment links
+    formatted_text = re.sub(
+        r"([#@]\w+)", r"`\1`", formatted_text
+    )  # wrap hashtags and mentions in blocks
     formatted_text = formatted_text.strip()
     daylog = f"""
 ## Day {daynum}: {formatted_date}
@@ -139,16 +93,17 @@ def update_log(tweet_id, daynum, created_date,txt,web_attachment,image_attachmen
         daylog += """**Thoughts**:
 """
     if not web_attachment is None:
-     daylog += f"""
+        daylog += f"""
 **Link(s) to work**: [{web_attachment.get('title')}]({web_attachment.get('url')})
 """
     if not image_attachment is None:
-     daylog += f"""
+        daylog += f"""
 ![{image_attachment.get('alt_text')}]({image_attachment.get('filepath')})
 """
 
-    with open("../../log.md", 'a') as lastday:
+    with open("../../log.md", "a") as lastday:
         lastday.write(daylog)
+
 
 def main():
     last_day = get_last_visited_day()
@@ -163,19 +118,19 @@ def main():
         created_date = get_created_date(tweet)
         public_metrics = get_public_metrics(tweet)
 
-        stat_data.append([id,daynum,created_date, public_metrics])
+        stat_data.append([id, daynum, created_date, public_metrics])
         # assuming we only add 1 new line at once
         if daynum <= last_day:
             continue
         # only update the text log, and get attachments for the last item
         web_attachment = get_web_attachment_url(tweet)
         image_attachment = download_image_attachment(daynum, tweet)
-        update_log(id, daynum, created_date,txt,web_attachment,image_attachment)
+        update_log(id, daynum, created_date, txt, web_attachment, image_attachment)
         update_last_line(daynum)
     update_stats(stat_data)
 
-
     logger.info("DONE")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
