@@ -32,8 +32,6 @@ def get_text(tweet):
 def get_created_date(tweet):
     """Use BST so 1 AM marks a new day"""
     # '%Y-%m-%dT%H:%M:%S.%fZ'
-
-    "Sat Aug 03 19:50:17 +0000 2024"
     date_str = tweet.get("tweet").get("created_at")
     date_datetime = dateutil.parser.parse(date_str)
     result = date_datetime.astimezone(tz=BST).isoformat()
@@ -41,7 +39,8 @@ def get_created_date(tweet):
     return result
 
 
-def download_image_attachment(daynum, tweet):
+def download_image_attachment(daynum, t):
+    tweet = t.get("tweet")
     includes = tweet.get("extended_entities")
     if includes is None:
         return None
@@ -49,24 +48,59 @@ def download_image_attachment(daynum, tweet):
     if (media is None) or len(media) == 0:
         return None
     logger.info("Found %d media for %s", len(media), tweet.get("id"))
-    result = None
-
+    result = []
+    i = 0
     for item in media:
         if item.get("type") == "photo":
             url = item.get("media_url")
             alt_text = item.get("alt_text")
-            filepath = f"assets/day-{daynum}.jpg"
-            result = {
-                "url": url,
-                "alt_text": alt_text,
-                "filepath": filepath,
-            }
-            logger.info("Image Attachment found", result)
-            response = requests.get(url)
+            filepath = f"assets/day-{daynum}_{i}.jpg"
+            result.append(
+                {
+                    "url": url,
+                    "alt_text": alt_text,
+                    "filepath": filepath,
+                    "type": "photo",
+                }
+            )
+            logger.info("Image Attachment found %s", result)
+            response = requests.get(url, timeout=600)
             with open(f"../../{filepath}", "wb") as attachment:
                 attachment.write(response.content)
             logger.info("Attachment saved to %s", filepath)
-            break  # stop at first attachment
+            i += 1
+        elif item.get("type") == "video":
+            video_info = item.get("video_info")
+            if video_info is None:
+                logger.error("No video info...")
+                break
+            variants = video_info.get("variants")
+            if variants is None:
+                logger.error("No video info...")
+                break
+
+            for variant in variants:
+                if (
+                    variant.get("content_type") == "video/mp4"
+                    and variant.get("bitrate") == "2176000"
+                ):
+                    url = variant.get("url")
+                    alt_text = ""
+                    filepath = f"assets/day-{daynum}.mp4"
+                    result.append(
+                        {
+                            "url": url,
+                            "alt_text": alt_text,
+                            "filepath": filepath,
+                            "type": "video",
+                        }
+                    )
+                    logger.info("Video Attachment found %s", result)
+                    response = requests.get(url, timeout=600)
+                    with open(f"../../{filepath}", "wb") as attachment:
+                        attachment.write(response.content)
+                    logger.info("Attachment saved to %s", filepath)
+                    i += 1
     return result
 
 

@@ -71,7 +71,7 @@ def update_stats(stat_lines):
     logger.info("Stats written")
 
 
-def update_log(tweet_id, daynum, created_date, txt, web_attachment, image_attachment):
+def update_log(tweet_id, daynum, created_date, txt, web_attachment, media_attachment):
     formatted_date = created_date.split("T")[0]
     formatted_text = txt
     formatted_text = re.sub(
@@ -96,12 +96,22 @@ def update_log(tweet_id, daynum, created_date, txt, web_attachment, image_attach
         daylog += f"""
 **Link(s) to work**: [{web_attachment.get('title')}]({web_attachment.get('url')})
 """
-    if not image_attachment is None:
-        daylog += f"""
-![{image_attachment.get('alt_text')}]({image_attachment.get('filepath')})
+    if not media_attachment is None:
+        for atchmnt in media_attachment:
+            if atchmnt.get("type") == "photo":
+                daylog += f"""
+![{atchmnt.get('alt_text', "")}]({atchmnt.get('filepath')})
+        """
+
+            elif atchmnt.get("type") == "video":
+                daylog += f"""
+<video width="320" height="240" controls>
+<source src="{atchmnt.get('filepath')}" type="video/mp4">
+Your browser does not support the video tag...
+</video>
 """
 
-    with open("../../log.md", "a") as lastday:
+    with open("../../log.md", "a", encoding="utf-8") as lastday:
         lastday.write(daylog)
 
 
@@ -124,8 +134,8 @@ def main():
             continue
         # only update the text log, and get attachments for the last item
         web_attachment = get_web_attachment_url(tweet)
-        image_attachment = download_image_attachment(daynum, tweet)
-        update_log(id, daynum, created_date, txt, web_attachment, image_attachment)
+        media_attachment = download_image_attachment(daynum, tweet)
+        update_log(id, daynum, created_date, txt, web_attachment, media_attachment)
         update_last_line(daynum)
     update_stats(stat_data)
 

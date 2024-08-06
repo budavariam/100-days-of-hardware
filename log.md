@@ -243,6 +243,8 @@ It may be plain simple but it's my first usable home improvement project so far 
 
 **Thoughts**:
 
+![None](assets/day-15_0.jpg)
+
 ## Day 16: 2023-06-25
 
 [Tweet](https://twitter.com/BudavariMatyas/status/1672871591359725568)
@@ -259,6 +261,8 @@ It may be plain simple but it's my first usable home improvement project so far 
 
 **Thoughts**:
 
+![None](assets/day-16_0.jpg)
+
 ## Day 17: 2023-07-08
 
 [Tweet](https://twitter.com/BudavariMatyas/status/1677657344820256769)
@@ -267,7 +271,7 @@ It may be plain simple but it's my first usable home improvement project so far 
 
 I started to work on my custom picture frame that'll have LED background lighting, it can have motion sensors and a light sensor.
 
-My custom black and white images will come into life by the backlighting 
+My custom black and white images will come into life by the backlighting
 
 (Inspired by Hwang Seontae)
 
@@ -289,6 +293,8 @@ My custom black and white images will come into life by the backlighting
 
 **Thoughts**:
 
+![None](assets/day-18_0.jpg)
+
 ## Day 19: 2023-09-16
 
 [Tweet](https://twitter.com/BudavariMatyas/status/1703002573244895700)
@@ -297,7 +303,7 @@ My custom black and white images will come into life by the backlighting
 
 New batch of parts have arrived, now I can dive into sound playing and radiofreq 🎉
 
-Though I did not check properly the connection types of the parts so I got some SMD parts, that are not immediately suitable for my breadboard. 
+Though I did not check properly the connection types of the parts so I got some SMD parts, that are not immediately suitable for my breadboard.
 
 I've learned my lesson
 
@@ -313,6 +319,8 @@ I've played around with my epaper module with raspberry pi pico to display quote
 
 **Thoughts**:
 
+![None](assets/day-20_0.jpg)
+
 ## Day 21: 2023-09-18
 
 [Tweet](https://twitter.com/BudavariMatyas/status/1703809500216475731)
@@ -324,6 +332,8 @@ Today I tried out my joystick component with my raspberry pi pico.
 I got the right values without an external ADC.
 
 **Thoughts**:
+
+![None](assets/day-21_0.jpg)
 
 ## Day 22: 2023-09-22
 
@@ -337,6 +347,11 @@ Shoutout and thanks for mannbro github user for the easy to use library he put t
 
 **Thoughts**:
 
+<video width="320" height="240" controls>
+<source src="assets/day-22.mp4" type="video/mp4">
+Your browser does not support the video tag...
+</video>
+
 ## Day 23: 2023-09-22
 
 [Tweet](https://twitter.com/BudavariMatyas/status/1705347446866407894)
@@ -348,6 +363,8 @@ Shoutout and thanks for mannbro github user for the easy to use library he put t
 🗃️ What I love in the opensource community is that if something is not available, there could be someone who uploaded it somewhere just to make the components available
 
 **Thoughts**:
+
+![None](assets/day-23_0.jpg)
 
 ## Day 24: 2023-11-01
 
@@ -375,6 +392,8 @@ Shoutout and thanks for mannbro github user for the easy to use library he put t
 
 **Thoughts**:
 
+![None](assets/day-25_0.jpg)
+
 ## Day 26: 2024-01-05
 
 [Tweet](https://twitter.com/BudavariMatyas/status/1743312855527485591)
@@ -385,11 +404,16 @@ Shoutout and thanks for mannbro github user for the easy to use library he put t
 
 🌈 Connected an RGB led with PWM
 
-🙋‍♂️ Handled button interruptions 
+🙋‍♂️ Handled button interruptions
 
 `#100DaysOfCode` `#cablePorn`
 
 **Thoughts**:
+
+<video width="320" height="240" controls>
+<source src="assets/day-26.mp4" type="video/mp4">
+Your browser does not support the video tag...
+</video>
 
 ## Day 27: 2024-01-06
 
@@ -403,6 +427,11 @@ Shoutout and thanks for mannbro github user for the easy to use library he put t
 
 **Thoughts**:
 
+<video width="320" height="240" controls>
+<source src="assets/day-27.mp4" type="video/mp4">
+Your browser does not support the video tag...
+</video>
+
 ## Day 28: 2024-01-10
 
 [Tweet](https://twitter.com/BudavariMatyas/status/1745208201832722706)
@@ -414,6 +443,11 @@ Shoutout and thanks for mannbro github user for the easy to use library he put t
 ⚡ By accident I learned more about analog to digital conversion. I had an issue with ESP32 not seeing the whole range of the joystick, apparently by default it only reads a fraction of the whole range
 
 **Thoughts**:
+
+<video width="320" height="240" controls>
+<source src="assets/day-28.mp4" type="video/mp4">
+Your browser does not support the video tag...
+</video>
 
 ## Day 29: 2024-01-11
 
@@ -433,7 +467,7 @@ Shoutout and thanks for mannbro github user for the easy to use library he put t
 
 **Today's Progress**: `#100DaysOfHardware` Day 30
 
-👷 I've improved my pipeline to only upload code that has changes. I use ampy with my relatively large (more than 2 files) codebase 
+👷 I've improved my pipeline to only upload code that has changes. I use ampy with my relatively large (more than 2 files) codebase
 
 🌪️ I also added a smoke test to see whether the code starts up properly and reaches the end of the 1st iteration
 
@@ -451,6 +485,8 @@ I have no idea whether it works correctly or my calibration is bad
 
 **Thoughts**:
 
+![None](assets/day-31_0.jpg)
+
 ## Day 32: 2024-01-20
 
 [Tweet](https://twitter.com/BudavariMatyas/status/1748631474981503328)
@@ -462,6 +498,8 @@ I have no idea whether it works correctly or my calibration is bad
 ♾️ After I used slow infinity shaped rotation, to make sure I get proper values for the calibration, North appeared where I expected
 
 **Thoughts**:
+
+![None](assets/day-32_0.jpg)
 
 ## Day 33: 2024-01-22
 
@@ -475,6 +513,8 @@ I have no idea whether it works correctly or my calibration is bad
 
 **Thoughts**:
 
+![None](assets/day-33_0.jpg)
+
 ## Day 34: 2024-01-23
 
 [Tweet](https://twitter.com/BudavariMatyas/status/1749906460509630468)
@@ -487,6 +527,8 @@ I have no idea whether it works correctly or my calibration is bad
 
 **Thoughts**:
 
+![None](assets/day-34_0.jpg)
+
 ## Day 35: 2024-02-01
 
 [Tweet](https://twitter.com/BudavariMatyas/status/1753197104967598329)
@@ -498,6 +540,8 @@ I have no idea whether it works correctly or my calibration is bad
 💊 I created an animated text scrolling through the famous quote of Morpheus
 
 **Thoughts**:
+
+![None](assets/day-35_0.jpg)
 
 ## Day 36: 2024-02-10
 
@@ -515,6 +559,8 @@ I have no idea whether it works correctly or my calibration is bad
 
 **Thoughts**:
 
+![None](assets/day-36_0.jpg)
+
 ## Day 37: 2024-02-25
 
 [Tweet](https://twitter.com/BudavariMatyas/status/1761803998942605672)
@@ -527,17 +573,24 @@ I have no idea whether it works correctly or my calibration is bad
 
 **Thoughts**:
 
+![None](assets/day-37_0.jpg)
+
 ## Day 38: 2024-03-13
 
 [Tweet](https://twitter.com/BudavariMatyas/status/1768044246798373181)
 
 **Today's Progress**: `#100DaysOfHardware` Day 38
 
-🛵 Today I tried out my new L298N, to see how it drives my motors. 
+🛵 Today I tried out my new L298N, to see how it drives my motors.
 
 🐍 Sadly I had problems with Thonny even in this simple configuration... it resetted my ESP32 after few iterations, I guess I have a problem with the circuit or some hardware
 
 **Thoughts**:
+
+<video width="320" height="240" controls>
+<source src="assets/day-38.mp4" type="video/mp4">
+Your browser does not support the video tag...
+</video>
 
 ## Day 39: 2024-03-17
 
@@ -552,6 +605,8 @@ I have no idea whether it works correctly or my calibration is bad
 🧑‍🍳 I still need a lot of practice, I possibly cooked another component
 
 **Thoughts**:
+
+![None](assets/day-39_0.jpg)
 
 ## Day 40: 2024-03-23
 
@@ -569,6 +624,8 @@ I have no idea whether it works correctly or my calibration is bad
 
 **Thoughts**:
 
+![None](assets/day-40_0.jpg)
+
 ## Day 41: 2024-03-24
 
 [Tweet](https://twitter.com/BudavariMatyas/status/1771826186663965157)
@@ -582,6 +639,11 @@ I have no idea whether it works correctly or my calibration is bad
 🤦 I used 9V for this 12V bulb because I could not find my 12V adapter
 
 **Thoughts**:
+
+<video width="320" height="240" controls>
+<source src="assets/day-41.mp4" type="video/mp4">
+Your browser does not support the video tag...
+</video>
 
 ## Day 42: 2024-03-28
 
@@ -597,6 +659,8 @@ I have no idea whether it works correctly or my calibration is bad
 
 **Thoughts**:
 
+![None](assets/day-42_0.jpg)
+
 ## Day 43: 2024-04-14
 
 [Tweet](https://twitter.com/BudavariMatyas/status/1779606666993979652)
@@ -611,6 +675,8 @@ I have no idea whether it works correctly or my calibration is bad
 
 **Thoughts**:
 
+![None](assets/day-43_0.jpg)
+
 ## Day 44: 2024-07-05
 
 [Tweet](https://twitter.com/BudavariMatyas/status/1809290301066080671)
@@ -624,6 +690,10 @@ I have no idea whether it works correctly or my calibration is bad
 📜 Its micropython code sends data via WiFi through REST to influx/grafana
 
 **Thoughts**:
+
+![None](assets/day-44_0.jpg)
+
+![None](assets/day-44_1.jpg)
 
 ## Day 45: 2024-07-15
 
@@ -652,19 +722,23 @@ Finally I figured out how to reliably update python code on my ESP32 from script
 
 **Thoughts**:
 
+![None](assets/day-46_0.jpg)
+
 ## Day 47: 2024-07-22
 
 [Tweet](https://twitter.com/BudavariMatyas/status/1815436437346505072)
 
 **Today's Progress**: `#100DaysOfHardware` Day 47
 
-🔋I was able to read data from BLE without connecting to the sensor 
+🔋I was able to read data from BLE without connecting to the sensor
 
 📖 I figured out how to read the BLE advertisement data from the sensor
 
 🤖 I made a poc with D1Mini
 
 **Thoughts**:
+
+![None](assets/day-47_0.jpg)
 
 ## Day 48: 2024-07-24
 
@@ -681,6 +755,10 @@ Finally I figured out how to reliably update python code on my ESP32 from script
 🤩 I'm proud of how it turned out! Even if it has its bad parts, looking forward to doing this more
 
 **Thoughts**:
+
+![None](assets/day-48_0.jpg)
+
+![None](assets/day-48_1.jpg)
 
 ## Day 49: 2024-07-26
 
@@ -710,6 +788,8 @@ Finally I figured out how to reliably update python code on my ESP32 from script
 
 **Thoughts**:
 
+![None](assets/day-50_0.jpg)
+
 ## Day 51: 2024-08-02
 
 [Tweet](https://twitter.com/BudavariMatyas/status/1819265700101341393)
@@ -726,6 +806,8 @@ Finally I figured out how to reliably update python code on my ESP32 from script
 
 **Thoughts**:
 
+![None](assets/day-51_0.jpg)
+
 ## Day 52: 2024-08-03
 
 [Tweet](https://twitter.com/BudavariMatyas/status/1819823120045293703)
@@ -741,3 +823,5 @@ Finally I figured out how to reliably update python code on my ESP32 from script
 🥇 We got first place with it
 
 **Thoughts**:
+
+![None](assets/day-52_0.jpg)
