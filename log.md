@@ -11,6 +11,9 @@
 <script>
 {% include_relative progress-chart-tooltip.js %}
 </script>
+<script>
+{% include_relative sticky-toc.js %}
+</script>
 <style>
 {% include_relative progress-chart-tooltip.css %}
 </style>
