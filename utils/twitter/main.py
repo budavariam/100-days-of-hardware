@@ -101,7 +101,7 @@ def update_log(tweet_id, daynum, created_date, txt, web_attachment, media_attach
             if atchmnt.get("type") == "photo":
                 daylog += f"""
 ![{atchmnt.get('alt_text', "")}]({atchmnt.get('filepath')})
-        """
+"""
 
             elif atchmnt.get("type") == "video":
                 daylog += f"""
