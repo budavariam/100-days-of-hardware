@@ -828,3 +828,140 @@ Finally I figured out how to reliably update python code on my ESP32 from script
 **Thoughts**:
 
 ![None](assets/day-52_0.jpg)
+
+## Day 53: 2024-08-05
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1820573363888062489)
+
+**Today's Progress**: `#100DaysOfHardware` Day 53
+
+🛠️ I got my new Dupont connector crimper, started to learn how to create my own cables
+
+🪞 I took a look back at how far I've come with this challenge
+
+✨ I updated my progress chart, and changed the API-based approach
+
+**Thoughts**:
+
+## Day 54: 2024-08-06
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1820892288341705105)
+
+**Today's Progress**: `#100DaysOfHardware` Day 54
+
+🦈 I read a tip, that it helps with protecting sensitive parts if we add a layer on the clips of the helping hand
+
+🚉 I've tried out shrink tubes for a valid usecase
+
+**Thoughts**:
+
+![None](assets/day-54_0.jpg)
+
+## Day 55: 2024-08-07
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1821091609586356403)
+
+**Today's Progress**: `#100DaysOfHardware` Day 55
+
+🚠 I tried out creating my own dupont cables
+
+📈 At first I created a single connection, then levelled up to 4 pins
+
+🔔 They passed the continuity test
+
+📏 I need to measure more precisely next time
+
+📹 I love how many teaching material is available
+
+**Thoughts**:
+
+![None](assets/day-55_0.jpg)
+
+![None](assets/day-55_1.jpg)
+
+## Day 56: 2024-08-12
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1823067766272016622)
+
+**Today's Progress**: `#100DaysOfHardware` Day 56
+
+🤖 I got started with Arduino programming via Arduino Uno R4
+
+🔌 The plug and make kit is more fun than I thought
+
+**Thoughts**:
+
+![None](assets/day-56_0.jpg)
+
+## Day 57: 2024-08-14
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1823673750912426392)
+
+**Today's Progress**: `#100DaysOfHardware` Day 57
+
+🎨 Today I've tried out my GC9A01 round TFT display with my ESP32
+
+👋 I was able to display an example code via SPI interface
+
+🫗 Sadly the code I used run into memory allocation issues
+
+**Thoughts**:
+
+![None](assets/day-57_0.jpg)
+
+## Day 58: 2024-08-17
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1824898443841560950)
+
+**Today's Progress**: `#100DaysOfHardware` Day 58
+
+🏎️ I created a `@monkeytype` speedometer with `@arduino` Plug and Make kit
+
+🧩 UNO R4 collects the speed info from MQTT then prints into the led matrix and calculates a percentage in Modulino Pixels
+
+🐢 80wpm = 100%
+
+⏩ The video is 3x faster than reality
+
+**Thoughts**:
+
+<video width="320" height="240" controls>
+<source src="assets/day-58.mp4" type="video/mp4">
+Your browser does not support the video tag...
+</video>
+
+## Day 59: 2024-08-22
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1826575167633416680)
+
+**Today's Progress**: `#100DaysOfHardware` Day 59
+
+🌡️Nowadays the weather is pretty unpredictable
+
+⏰ I aim to overview the weather forecast from my bed upon waking up
+
+📐 I put together a simple layout for the 5 day forecast
+
+☁️ I collect data from `#OpenWeatherMap` API once a day
+
+**Thoughts**:
+
+![None](assets/day-59_0.jpg)
+
+## Day 60: 2024-08-24
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1827438758498643988)
+
+**Today's Progress**: `#100DaysOfHardware` Day 60
+
+⚒️ I continued my weather display
+
+🔍 I needed to simplify the welcome screen. The screen is too small to have a quick overview upon waking up
+
+✍️ I changed the rendering to support different fonts
+
+🔁 Struggled a bit with rotating the screen
+
+**Thoughts**:
+
+![None](assets/day-60_0.jpg)
