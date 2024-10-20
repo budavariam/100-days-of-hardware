@@ -16,6 +16,7 @@ echo "---- generating progress chart"
 pushd utils/svg-graph || exit 1
 npm run build
 popd || exit 1
+touch progress-chart.svg
 npx svgo progress-chart.svg
 
 echo "---- DONE"

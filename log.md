@@ -965,3 +965,190 @@ Your browser does not support the video tag...
 **Thoughts**:
 
 ![None](assets/day-60_0.jpg)
+
+## Day 61: 2024-08-27
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1828553039071871032)
+
+**Today's Progress**: `#100DaysOfHardware` Day 61
+
+✨ I updated my MVP code, I simplified it and added my deploy script for simpler updates 
+
+🔤 I switched to a monospace a font, kudos to those who know which one
+
+🐛 I hunted request errors and layout issues
+
+**Thoughts**:
+
+![None](assets/day-61_0.jpg)
+
+## Day 62: 2024-09-10
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1833568025720610916)
+
+**Today's Progress**: `#100DaysOfHardware` Day 62
+
+📐 I feel more confident about working with the framebuffer, I calculate the positions with less magic number positioning
+
+🐰 The 0.0 in this monospace font looks like a bunny
+
+⏰ I made the code aware whether it woke up from deep sleep
+
+**Thoughts**:
+
+![None](assets/day-62_0.jpg)
+
+## Day 63: 2024-09-11
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1833942085390545381)
+
+**Today's Progress**: `#100DaysOfHardware` Day 63
+
+🔮 I added support for multiple layouts
+
+🎨 I figured out how to render png images, need to enhance them for monochrome display e. g. pouring rain
+
+🛠️ Optimized the code to fit in memory
+
+💤 I started to work on btn handler &amp; to wake up from deep sleep
+
+**Thoughts**:
+
+![None](assets/day-63_0.jpg)
+
+## Day 64: 2024-09-13
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1834685607899275752)
+
+**Today's Progress**: `#100DaysOfHardware` Day 64
+
+🎨 I've updated the images for monochrome display (see rain)
+
+⏰ I added a button for waking up the device to get fresh data
+
+🕒 I updated the screens to have 3-hour, 6-hour, daily views
+
+🔤 I played with font sizes to fit more info into the screen
+
+**Thoughts**:
+
+![None](assets/day-64_0.jpg)
+
+## Day 65: 2024-09-16
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1835745419525009855)
+
+**Today's Progress**: `#100DaysOfHardware` Day 65
+
+🪲 Over the weekend I collected all my modules that missed legs and soldered them on
+
+🦀 I tried out a smaller helping hand
+
+🪖 I reached a milestone with soldering. It was my dream to add pins to my pico W. Finally I was able to do it effortlessly
+
+**Thoughts**:
+
+![None](assets/day-65_0.jpg)
+
+![None](assets/day-65_1.jpg)
+
+## Day 66: 2024-09-22
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1837772312348627242)
+
+**Today's Progress**: `#100DaysOfHardware` Day 66
+
+📐 I revisited the use of the multimeter
+
+🚥 I tried out smaller lamps and switches
+
+**Thoughts**:
+
+## Day 67: 2024-09-23
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1838319881525006499)
+
+**Today's Progress**: `#100DaysOfHardware` Day 67
+
+🎮 I experimented with joystick controller connection via bluetooth
+
+🤖 I tried out esp32 and arduino uno with different tutorials 
+
+👷 I haven't yet been able to make it function as I imagined
+
+**Thoughts**:
+
+## Day 68: 2024-09-24
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1838652005784379463)
+
+**Today's Progress**: `#100DaysOfHardware` Day 68
+
+🐍 I built and flashed my first micropython firmeware from scratch
+
+🐋 I understand now why there is no dockerized env
+
+🔧 I added the modification I found yesterday
+
+🪫I experimented with bluetooth simple and bluetooth le
+
+💡 It still does not click
+
+**Thoughts**:
+
+## Day 69: 2024-10-02
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1841369176910286947)
+
+**Today's Progress**: `#100DaysOfHardware` Day 69
+
+🎁 The custom cases have arrived
+
+🪖 I soldered the last protoboard
+
+🚢 We can deploy the prototypes for home automation
+
+📚 I reassured myself tat documentation and proper marking are keys to success
+
+**Thoughts**:
+
+![None](assets/day-69_0.jpg)
+
+![None](assets/day-69_1.jpg)
+
+## Day 70: 2024-10-05
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1842644946114982319)
+
+**Today's Progress**: `#100DaysOfHardware` Day 70
+
+🧲 I tried out my new digital hall effect sensor CC6201TO TO-92S
+
+🔦I connected a modulino led to show if I've visited a sensor with the magnet
+
+🔘 I used modulino button to reset the lights
+
+🍟 I tried it with Arduino UNO R4  and ESP D1 mini as well
+
+**Thoughts**:
+
+<video width="320" height="240" controls>
+<source src="assets/day-70.mp4" type="video/mp4">
+Your browser does not support the video tag...
+</video>
+
+## Day 71: 2024-10-06
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1842910466835685795)
+
+**Today's Progress**: `#100DaysOfHardware` Day 71
+
+🪖 I soldered a few more D1 minis
+
+🖼️ I'm experimenting with different desk layouts
+
+❌ Using a breadboard as helping hand is not a good idea, but it looked good for the picture
+
+**Thoughts**:
+
+![None](assets/day-71_0.jpg)
