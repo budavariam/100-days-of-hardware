@@ -1611,3 +1611,19 @@ Your browser does not support the video tag...
 **Thoughts**:
 
 ![None](assets/day-99_0.jpg)
+
+## Day 100: 2025-03-21
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1903159896478191813)
+
+**Today's Progress**: `#100DaysOfHardware` Day 100
+
+🏁 I reached the final day of the challenge
+
+🧪 I tried out ESPNow and i2c 7segment display driver
+
+⏱️ I put together a simple reaction testing game, after start it waits for a touch sensor signal, then prints the elapsed time in seconds
+
+**Thoughts**:
+
+![None](assets/day-100_0.jpg)
