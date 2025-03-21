@@ -1152,3 +1152,462 @@ Your browser does not support the video tag...
 **Thoughts**:
 
 ![None](assets/day-71_0.jpg)
+
+## Day 72: 2024-10-20
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1848090846769689057)
+
+**Today's Progress**: `#100DaysOfHardware` Day 72
+
+🤖 I got stararted with ROS2
+
+🖼️ Created my first custom marker for Rviz2
+
+🪩 It's a start
+
+**Thoughts**:
+
+## Day 73: 2024-10-26
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1850277712255975440)
+
+**Today's Progress**: `#100DaysOfHardware` Day 73
+
+🎮 I created an interactive ros2 marker
+
+🌉 I added an mqtt bridge in the mix
+
+🏗️ I set up a D1 mini to recieve the selected values and move the panel accordingly
+
+👉 I'm not familiar enough with the controlling yet to make it work from the touch screen
+
+**Thoughts**:
+
+![None](assets/day-73_0.jpg)
+
+## Day 74: 2024-12-11
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1866987564516999478)
+
+**Today's Progress**: `#100DaysOfHardware` Day 74
+
+💰 I replayed a rosbag and feeded the data into foxglove
+
+🎥 I examined the values in foxglove studio
+
+🖼️ I created a minimal threejs scene to visualize the data
+
+🌪️ I got the rosbag data into the scene through websocket via ros message parser
+
+**Thoughts**:
+
+## Day 75: 2024-11-09
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1855315309378572490)
+
+**Today's Progress**: `#100DaysOfHardware` Day 75
+
+I tried to fix the design flaw of my MAX30100 to interface it with arduino. I failed to do so.
+
+**Thoughts**:
+
+## Day 76: 2025-01-01
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1874521989886718018)
+
+**Today's Progress**: `#100DaysOfHardware` Day 76
+🎊 It's getting worse how my 100 day challenge spans through 3 years
+
+📜 Also why my high school electronic class 10+ years ago was on paper
+
+🪄 It's way more fun to interact with the components
+
+💡I tried out a terminal adapter with a light switch
+
+**Thoughts**:
+
+![None](assets/day-76_0.jpg)
+
+## Day 77: 2025-01-01
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1874594037166121213)
+
+**Today's Progress**: `#100DaysOfHardware` Day 77
+
+💡I continued to try out lamp switches
+
+🔘 I hooked up 101, 105 and two 106s
+
+⚡ I tried out forwarding the live to a different switch and added a wago connector just for fun
+
+**Thoughts**:
+
+![None](assets/day-77_0.jpg)
+
+## Day 78: 2025-01-03
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1875316319165497584)
+
+**Today's Progress**: `#100DaysOfHardware` Day 78 
+
+📻 Today it's IoT web dev day
+
+🌡️ I mocked typical home temperature and humidity data
+
+🖼️ I made a site that fetches a bucket and visualizes the latest values
+
+🔧 It's configurable via query params at:
+
+**Thoughts**:
+
+![None](assets/day-78_0.jpg)
+
+## Day 79: 2025-01-04
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1875673176182812917)
+
+**Today's Progress**: `#100DaysOfHardware` Day 79
+
+💻 I put together the firmware for the smarthome BLE data collector without running it
+
+🌊 It connects to wifi, reads the nearby BLE advertisements for a while, sends them to a server and goes to deepsleep
+
+🏁 I need to test it on a real ESP32 device
+
+**Thoughts**:
+
+## Day 80: 2025-01-05
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1876054807473164723)
+
+**Today's Progress**: `#100DaysOfHardware` Day 80
+
+🏁 I finalized the firmware for my BLE data collector code.
+
+⏰ I collect data for 30 seconds then go to sleep with the device.
+
+🐰 I figured out how to limit the data from the bucket, so it made the site gfaster and the network requests thinner
+
+**Thoughts**:
+
+## Day 81: 2025-01-06
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1876382091216339170)
+
+**Today's Progress**: `#100DaysOfHardware` Day 81
+
+🔧 I fixed a timezone issue. UTC for the rescue.
+
+⏳I put together the base skeleton for  visualizing historical data 😍
+
+🔋 The power consumption is still unmeasurably low. I'm trying to figure out how to add battery power instead of the wall socket
+
+**Thoughts**:
+
+## Day 82: 2025-01-07
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1876747237033726029)
+
+**Today's Progress**: `#100DaysOfHardware` Day 82
+
+⌚ I've updated my sensor info page with historical data
+
+🌆 Added a landing page for configuration
+
+🛠️ Added option for mock data
+
+👷 The collector firmware is happily working
+
+**Thoughts**:
+
+## Day 83: 2025-01-10
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1877685762419814420)
+
+**Today's Progress**: `#100DaysOfHardware` Day 83
+
+📨 Finally I'm able to send Twist messages from my robot control UI to the Foxglove bridge via websocket. I was only able to read messages during the hackathon. 
+
+🔎 The sent messages show up properly in the ros2 topic
+
+**Thoughts**:
+
+## Day 84: 2025-01-18
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1880499439858774312)
+
+**Today's Progress**: `#100DaysOfHardware` Day 84
+
+🌙 My data collector did not get data through the night.
+
+😴 I fund a minor flaw with the order of events. I modified the code so that it's not only sent to sleep when the wifi connection and measurement completes.
+
+📜 I improved my install script
+
+**Thoughts**:
+
+## Day 85: 2025-01-20
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1881407399279653271)
+
+**Today's Progress**: `#100DaysOfHardware` Day 85
+
+🛡️ UPS shield for ESP32 powered by 18650 battery holder has arrived!
+
+💤 The shield does not sleep when ESP is in deepsleep
+
+🔋I installed it for my data collector, let's see how long will it last.
+
+🕒 Let's collect the BLE sensor data every 15 minutes
+
+**Thoughts**:
+
+![None](assets/day-85_0.jpg)
+
+## Day 86: 2025-02-04
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1886892609248936443)
+
+**Today's Progress**: `#100DaysOfHardware` Day 86
+
+☯️ My mantra is to try to be 1% better than yesterday
+
+🧺 I bought a dupont set and tried out the housing
+
+🛠️ Practiced crimping dupont connectors.
+
+🔔 Each wire passed the continuity test
+
+**Thoughts**:
+
+![None](assets/day-86_0.jpg)
+
+## Day 87: 2025-02-06
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1887621103314739343)
+
+**Today's Progress**: `#100DaysOfHardware` Day 87
+
+☯️ I've got to make mistakes to learn from them
+
+🔌 I tried to use my new connector, but sadly one cable was faulty
+
+✂️ I could not remove it, so I cut them all and started over.
+
+👷 It's still not great quality, but I hope it's getting better
+
+**Thoughts**:
+
+![None](assets/day-87_0.jpg)
+
+![None](assets/day-87_1.jpg)
+
+## Day 88: 2025-02-07
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1887766045387096263)
+
+**Today's Progress**: `#100DaysOfHardware` Day 88
+
+🔘 I tried out my button matrix with the new cable
+
+🖥️ I added an LCD screen with basic scrolling mechanism to collect the pushed buttons
+
+**Thoughts**:
+
+![None](assets/day-88_0.jpg)
+
+## Day 89: 2025-02-07
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1887918267861450877)
+
+**Today's Progress**: `#100DaysOfHardware` Day 89
+
+💔 I had a bag of cables that I considered bad earlier. The cable endings were broken or bent, some cables were torn apart
+
+❤️‍🩹 I cut out the healthy parts and added new endings to them
+
+♻️ In the end it was almost effortless compared to a few days ago
+
+**Thoughts**:
+
+![None](assets/day-89_0.jpg)
+
+## Day 90: 2025-02-08
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1888126586223767602)
+
+**Today's Progress**: `#100DaysOfHardware` Day 90
+
+🃏 I prototyped a touch enabled picture frame for Valentine's day
+
+📝 I used wokwi as an editor to write the logic and add the components
+
+🍞 I created a breadboard prototype to see how it'll work
+
+🖼️ Then I put it all together in a picture frame
+
+**Thoughts**:
+
+![None](assets/day-90_0.jpg)
+
+![None](assets/day-90_1.jpg)
+
+<video width="320" height="240" controls>
+<source src="assets/day-90.mp4" type="video/mp4">
+Your browser does not support the video tag...
+</video>
+
+## Day 91: 2025-02-10
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1889040207217086863)
+
+**Today's Progress**: `#100DaysOfHardware` Day 91
+
+🚨 I soldered resistors on the anode of leds
+
+🌌 I created bendable connectors as there will be limited space in the final layout and I don't want to create a pcb
+
+🔥 I used heatshrink to protect the wires
+
+**Thoughts**:
+
+![None](assets/day-91_0.jpg)
+
+## Day 92: 2025-02-11
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1889269235500666945)
+
+**Today's Progress**: `#100DaysOfHardware` Day 92
+
+❤️ I tried out ESP32 C3 supermini. I love it
+
+💣 It's a bit of an overkill for my use-case, but I have limited space so it's perfect
+
+🛹 It's really easy to work with it and it's by far my smallest board so far
+
+**Thoughts**:
+
+![None](assets/day-92_0.jpg)
+
+## Day 93: 2025-02-12
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1889746532599017960)
+
+**Today's Progress**: `#100DaysOfHardware` Day 93
+
+🚨 I made 2 new leds for better light distribution without having to use stronger leds and another power source
+
+⌚ Practice makes perfect, I'm getting more confident and faster with the tools
+
+❤️ I updated the firmware with a more lifelike pulse effect
+
+**Thoughts**:
+
+![None](assets/day-93_0.jpg)
+
+## Day 94: 2025-02-13
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1890134074511225286)
+
+**Today's Progress**: `#100DaysOfHardware` Day 94
+
+🌳 I tweaked the settings in my firmware code to save energy
+
+⏳I decreased the BLE signal reading time and delayed the connection to wifi until the relevant data is available
+
+**Thoughts**:
+
+![None](assets/day-94_0.jpg)
+
+## Day 95: 2025-02-14
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1890308752852607447)
+
+**Today's Progress**: `#100DaysOfHardware` Day 95
+
+🚢 MVP is ready for the day of shipment
+
+🗿 3d printing could significantly improve this project
+
+📏 I could save more space by using a custom PCB instead of a mini breadboard.
+
+❤️ I'm happy with how it turned out
+
+**Thoughts**:
+
+![None](assets/day-95_0.jpg)
+
+## Day 96: 2025-02-15
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1890699612618367118)
+
+**Today's Progress**: `#100DaysOfHardware` Day 96
+
+🦺 Typical demo effect, the device failed when I checked it for the last time 
+
+🪲 I had issues with a bad cable, and with a layer that I used for masking. It triggered the touch sensor...
+
+❤️ After tracking those issues it was ready for Valentine's day
+
+**Thoughts**:
+
+<video width="320" height="240" controls>
+<source src="assets/day-96.mp4" type="video/mp4">
+Your browser does not support the video tag...
+</video>
+
+## Day 97: 2025-03-01
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1895967686703923438)
+
+**Today's Progress**: `#100DaysOfHardware` Day 97
+
+📚 I figured, that last time I did not use a proper speaker, and was using too low voltage...
+
+🗣️ I connected to a TTS API to say Hello world! 
+
+🔋I tried 12V power source to see the volume difference
+
+📝 I made a fritzing diagram for future reference
+
+**Thoughts**:
+
+![None](assets/day-97_0.jpg)
+
+![None](assets/day-97_1.jpg)
+
+## Day 98: 2025-03-06
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1897531829835477021)
+
+**Today's Progress**: `#100DaysOfHardware` Day 98
+
+🛒 New components arrived
+
+📈 I soldered the most components in one go so far
+
+📃 ESP32s,touch sensors, microphones and speakers
+
+🗜️ I sacraficed a mini breadboard for stability
+
+**Thoughts**:
+
+![None](assets/day-98_0.jpg)
+
+![None](assets/day-98_1.jpg)
+
+## Day 99: 2025-03-18
+
+[Tweet](https://twitter.com/BudavariMatyas/status/1902097805864243293)
+
+**Today's Progress**: `#100DaysOfHardware` Day 99
+
+🎤 I spent a few hours trying to send sound from INMP441 to another device with a speaker
+
+🎉 I managed to send clear audio from raspberry pi to macOS. At least I know the mic is working... 
+
+🏁 My ambitious goal was to exchange data between ESPs
+
+**Thoughts**:
+
+![None](assets/day-99_0.jpg)

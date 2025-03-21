@@ -22,7 +22,7 @@ function generate(start, data = []) {
 }
 
 const dates = [
-  '2023-04-15', '2024-04-15'
+  '2023-04-15', '2024-04-15', '2025-04-15'
 ]
 
 for (const s of dates) {
